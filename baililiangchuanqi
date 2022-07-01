@@ -460,7 +460,6 @@ while wait() do
 wait(2)
 game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl")
 	end
-	end
 end)
 A10.Name = "A10"
 A10.Parent = AF
@@ -1281,3 +1280,21 @@ local function VIEO_fake_script() -- CNM.ZHANG
 	end)
 end
 coroutine.wrap(VIEO_fake_script)()
+local function notify(title,text,time)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = title;
+		Text = text;
+		Icon = nil;
+		Duration = time
+	})
+end
+local function AntiAFK()
+    game:GetService('Players').LocalPlayer.Idled:Connect(function()
+        notify('反挂机', '反挂机已生效', 4)
+        game:GetService('VirtualUser'):Button2Down(Vector2.new(0, 0), game:GetService('Workspace').CurrentCamera.CFrame);
+        wait(.325)
+        game:GetService('VirtualUser'):Button2Up(Vector2.new(0, 0), game:GetService('Workspace').CurrentCamera.CFrame);
+    end);
+end;
+AntiAFK();
+notify('反挂机', '反挂机已开启', 4)
