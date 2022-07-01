@@ -460,6 +460,7 @@ while wait() do
 wait(2)
 game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl")
 	end
+	end
 end)
 A10.Name = "A10"
 A10.Parent = AF
