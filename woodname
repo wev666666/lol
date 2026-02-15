@@ -1,0 +1,19 @@
+local treeMap = {
+    ["普通树"] = "Generic",
+    ["沼泽黄金"] = "GoldSwampy",
+    ["樱花"] = "Cherry",
+    ["蓝木"] = "CaveCrawler",
+    ["冰木"] = "Frost",
+    ["火山木"] = "Volcano",
+    ["橡木"] = "Oak",
+    ["巧克力木"] = "Walnut",
+    ["白桦木"] = "Birch",
+    ["黄金木"] = "SnowGlow",
+    ["雪地松"] = "Pine",
+    ["僵尸木"] = "GreenSwampy",
+    ["大巧克力树"] = "Koa",
+    ["椰子树"] = "Palm",
+    ["幻影木"] = "LoneCave"
+}
+
+return treeMap
